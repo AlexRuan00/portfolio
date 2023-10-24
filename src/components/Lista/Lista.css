@@ -1,0 +1,36 @@
+.info-box {
+    border: 1px solid #666666;
+    border-radius: 4px;
+    margin: 10px;
+  }
+  
+  .info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #666666;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-right: 10px;
+    border-width: 6px 5px 0 5px;
+    transition: transform 0.3s;
+  }
+  
+  .arrow.up {
+    transform: rotate(180deg);
+  }
+  
+  .info-title {
+    font-weight: bold;
+  }
+  
+  .info-content {
+    padding: 10px;
+  }
+  
