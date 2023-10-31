@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import Lista from './components/Lista'
+import { BsWhatsapp, BsLaptop, BsFillGeoAltFill, BsFillEnvelopeAtFill, BsGithub} from "react-icons/bs";
 import './App.css'
 
+
 function App() {
-  const habilidades = ["Javascript","Node.js","HTML + CSS","React", "SQL", "MongoDB", "Git e Github"];
+  const habilidades = ["Javascript","Node.js","SQL", "MongoDB", "HTML + CSS","React", "Git e Github"];
+  const projetos = ["https://rick-and-morty-app-rosy-psi.vercel.app"]
   const mostrarHabilidades = () => {
     return (
       <div>
@@ -16,17 +19,19 @@ function App() {
   return (
     <div className='card-infos'>
       <div className='topo-infos'>
-        <img src='https://i.pinimg.com/736x/d5/96/a0/d596a0b84cb5081a514755ef867924a1.jpg'></img>
+        <img src='../public/alex.png'></img>
         <div className='infos-pessoal'>
           <h1>Olá, meu nome é Álex</h1>
-          <p>Desenvolvedor Full stack</p>
-          <p>Santa Catarina - SC</p>
-          <p>(48) 98451-6306</p>
-          <p>alex.ruan.ribeiro@gmail.com</p>
-          <a href='https://github.com/AlexRuan00'> GitHub</a>
+          <p className='icon'><BsLaptop/>Desenvolvedor Full stack</p>
+          <p className='icon'><BsFillGeoAltFill/>Santa Catarina - SC</p>
+          <p className='icon'><BsWhatsapp/>(48) 98451-6306</p>
+          <p className='icon'><BsFillEnvelopeAtFill/>alex.ruan.ribeiro@gmail.com</p>
+          <a className='icon' href='https://github.com/AlexRuan00'><BsGithub/>GitHub</a>
         </div>
       </div>
+   
       <Lista title={"Habilidades"} children={habilidades}/>
+      <Lista title={"Projetos"} children={projetos}/>
     </div>
   )
 }
