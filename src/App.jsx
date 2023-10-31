@@ -19,7 +19,7 @@ function App() {
   return (
     <div className='card-infos'>
       <div className='topo-infos'>
-        <img src='../public/alex.png'></img>
+        <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AK7aPaD0kxlZd8vluHPKb0Owtzq3ahvyI1JiXxcCKqY2LUi7ZFEFs_7AZS-EF-APHaNNiI7pKXauVcZAMyoKUezRNz0F0-UY_A=w1879-h931"></img>
         <div className='infos-pessoal'>
           <h1>Olá, meu nome é Álex</h1>
           <p className='icon'><BsLaptop/>Desenvolvedor Full stack</p>
